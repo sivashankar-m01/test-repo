@@ -1,0 +1,5 @@
+name: custom runner test
+on: push
+jobs:
+  init:
+    run: echo $hostname
