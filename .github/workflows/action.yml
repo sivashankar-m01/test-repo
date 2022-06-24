@@ -1,5 +1,10 @@
 name: custom runner test
+
 on: push
+
 jobs:
   init:
-    run: echo $hostname
+    runs-on: self-histed
+    steps:
+      - run: echo $hostname
+      - run: echo "Hello world runs on $hostname"
